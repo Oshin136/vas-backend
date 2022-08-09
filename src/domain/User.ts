@@ -1,4 +1,6 @@
 export interface User {
-  firstName: string;
-  lastName: string;
+  id:number,
+  name:string,
+  email:string
 }
+export type UserToInsert = Omit<User, 'id'>;
